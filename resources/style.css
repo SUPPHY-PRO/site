@@ -136,6 +136,44 @@ body button {
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.4);
 }
 
+.youtube{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 15px;
+  left: 345px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 1s ease;
+  text-align: left;
+  justify-content: center;
+}
+
+.telegram{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 15px;
+  left: 405px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 1s ease;
+  text-align: left;
+  justify-content: center;
+}
+
+.youtube:hover{
+  transform: scale(1.2);
+}
+
+.telegram:hover{
+  transform: scale(1.2);
+}
+
 .headObject {
   text-decoration: none;
   color: white;

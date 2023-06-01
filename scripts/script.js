@@ -10,6 +10,8 @@ var csgoButton = document.querySelector(".page.casgo");
 var programImage = document.getElementById("programImage");
 var captionText = document.getElementById("caption");
 var discriptionText = document.getElementById("discription");
+var ytImage = document.getElementById("yt");
+var tgImage = document.getElementById("tg");
 var imagesArray = [
   "/images/win12.webp",
   "/images/epic.webp",
@@ -24,7 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
     "Сайт создан ради забавы, не рекомендуется скачивать отсюда файлы, если Вы не НЕДОХАКЕРЫ Lite";
   discriptionText.textContent =
     "Лучше подпишись на мои YouTube и Telegram каналы";
-    preloadImages();
+  preloadImages();
+});
+
+ytImage.addEventListener("click", function () {
+  window.open("https://www.youtube.com/channel/UCmPjTsx2AqQQVftOwofk0Kw", "_blank");
+});
+
+tgImage.addEventListener("click", function () {
+  window.open("https://t.me/SUPPHY_PRO", "_blank");
 });
 
 windowsButton.addEventListener("click", function () {
