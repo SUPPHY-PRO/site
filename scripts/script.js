@@ -104,7 +104,7 @@ downloadButton.addEventListener("click", function () {
     case "steam":
       window.open("https://disk.yandex.ru/d/s_V_YJMrlhlJhw", "_blank");
       break;
-    case "cago":
+    case "csgo":
       window.open("https://disk.yandex.ru/d/OqZ78PzG4cJfUA", "_blank");
       break;
     default:
