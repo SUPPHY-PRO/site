@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
   discriptionText.textContent =
     "Лучше подпишись на мои YouTube и Telegram каналы";
   preloadImages();
-  
 });
 
 ytImage.addEventListener("click", function () {
@@ -133,8 +132,8 @@ otherButton.addEventListener("click", function () {
 downloadButton.addEventListener("click", function () {
   switch (page) {
     case "windows":
-      //   window.open("https://disk.yandex.ru/d/OVoGpie4QwWXAA", "_blank");
-      downloadFile("/resources/files/win12.zip");
+      window.open("https://disk.yandex.ru/d/OVoGpie4QwWXAA", "_blank");
+      // downloadFile("/resources/files/win12.zip");
       break;
     case "epic":
       //window.open("https://disk.yandex.ru/d/_BoFNtScw29-Gg", "_blank");
