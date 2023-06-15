@@ -44,7 +44,8 @@ steam1.addEventListener("click", function () {
 });
 
 win1.addEventListener("click", function () {
-  downloadFile(winArray[0]);
+  //downloadFile(winArray[0]);
+  window.open("https://disk.yandex.ru/d/OVoGpie4QwWXAA", "_blank");
 });
 
 email.addEventListener("click", function () {
