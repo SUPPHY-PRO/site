@@ -1,72 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <title>SUPPHY | PRO</title>
-    <link rel="icon" href="images/icon.png" />
-    <link rel="stylesheet" href="resources/styles/style.css" />
+    <link rel="stylesheet" href="../resources/css/main.css" />
   </head>
   <body>
-    <div class="sidebar">
-      <a class="headObject" href="https://supphy.ru" target="_self">
-        <img src="images/icon.png" alt="I" />
-        <span>SUPPHY.RU</span>
-      </a>
-      <hr class="separator" />
-      <div>
-        <div class="program up">
-          <button class="page windows">Windows 12</button>
-          <span class="arrow">▶</span>
+    <div class="block">
+      <div class="block_1">
+        <div class="block_8">
+          <div
+            onclick="window.location.href = 'https://supphy.ru'"
+            class="icon"
+          ></div>
+          <span onclick="window.location.href = 'https://supphy.ru'"
+            >SUPPHY.RU</span
+          >
         </div>
-        <div class="program">
-          <button class="page epic">Epic Games</button>
-          <span class="arrow">▶</span>
+        <hr class="line" />
+        <div class="block_10 noselect">
+          <div id="windowsProgramText" class="left-program">
+            <p class="noselect">Windows 12</p>
+            <span>➤</span>
+          </div>
+          <div id="epicProgramText" class="left-program">
+            <p>Epic Games</p>
+            <span>➤</span>
+          </div>
+          <div id="antivirusProgramText" class="left-program">
+            <p>Anti Virus</p>
+            <span>➤</span>
+          </div>
+          <div id="minecraftProgramText" class="left-program">
+            <p>Minecraft</p>
+            <span>➤</span>
+          </div>
+          <div id="gtaProgramText" class="left-program">
+            <p>GTA 6</p>
+            <span>➤</span>
+          </div>
+          <div id="steamProgramText" class="left-program">
+            <p>Steam</p>
+            <span>➤</span>
+          </div>
+          <div id="csgoProgramText" class="left-program">
+            <p>CS:GO</p>
+            <span>➤</span>
+          </div>
+          <div id="otherProgramText" class="left-program">
+            <p>Другое</p>
+            <span>➤</span>
+          </div>
         </div>
-        <div class="program">
-          <button class="page antivirus">Anti Virus</button>
-          <span class="arrow">▶</span>
+        <div class="designed">Designed by: <span>SUPPHY</span></div>
+      </div>
+      <div class="block_2">
+        <div id="caption" class="block_4"></div>
+        <div id="discription" class="block_5"></div>
+        <div class="block_6">
+          <div id="downloadButton" class="download-button noselect">
+            <span>Скачать | Download</span>
+          </div>
         </div>
-        <div class="program">
-          <button class="page minecraft">Minecraft</button>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="program">
-          <button class="page gta">GTA 6</button>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="program">
-          <button class="page steam">Steam</button>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="program">
-          <button class="page casgo">CS:GO</button>
-          <span class="arrow">▶</span>
+        <div class="block_7">
+          <div id="yt" class="youtube"></div>
+          <div id="tg" class="telegram"></div>
+          <div id="qiwi" class="qiwi"></div>
         </div>
       </div>
-      <div>
-        <span class="designed-text">Designed by: SUPPHY</span>
-      </div>
+      <div id="programImage" class="block_3"></div>
     </div>
-    <div class="about-program">
-      <div class="program-caption">
-        <span id="caption"></span>
-      </div>
-      <div class="program-discription">
-        <span id="discription"></span>
-      </div>
-      <button id="downloadButton" class="download-button">
-        Скачать | Download
-      </button>
-    </div>
-    <div>
-      <img id="programImage" class="program-image" src="" />
-    </div>
-    <div>
-      <img id="yt" class="youtube" src="images/yt.webp">
-    </div>
-    <div></div>
-      <img id="tg" class="telegram" src="images/tg.webp">
-    </div>
-    <script src="scripts/script.js"></script>
+    <script src="/resources/scripts/script.js"></script>
   </body>
 </html>
