@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul il {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: "gost";
+  src: url("../fonts/gost.ttf") format("truetype");
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+body {
+  background: #303030;
+  font-family: "gost", Arial, sans-serif;
+  overflow: hidden;
+  font-size: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template: 1fr 1fr/1fr;
+}
+
+.delete-text {
+  font-size: 30px;
+  margin: 15px auto;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.instruction {
+  margin: 0 50px 15px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.instruction span {
+  color: rgba(255, 255, 255, 0.8);
+}
+.instruction .copy {
+  cursor: pointer;
+}
+
+.ps {
+  margin: 0 50px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.1);
+  margin: 15px auto;
+  font-size: 16px;
+}
+
+.languages {
+  margin: 65px auto;
+}
+.languages span {
+  padding: 16px 14px 11px 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 100px;
+  background: #4882b8;
+}
+.languages .langru {
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid white;
+  cursor: default;
+}
+.languages .langen {
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}/*# sourceMappingURL=games.css.map */

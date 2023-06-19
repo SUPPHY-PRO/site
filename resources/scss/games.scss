@@ -1,0 +1,80 @@
+@import "nullable.scss";
+$color-blue: #4882b8;
+$color-blue-hover: #447cb0;
+$color-opa-white-01: rgba(255, 255, 255, 0.1);
+$color-opa-white-02: rgba(255, 255, 255, 0.2);
+$color-opa-white-03: rgba(255, 255, 255, 0.3);
+$color-opa-white-04: rgba(255, 255, 255, 0.4);
+$color-opa-white-05: rgba(255, 255, 255, 0.5);
+$color-opa-white-06: rgba(255, 255, 255, 0.6);
+$color-opa-white-07: rgba(255, 255, 255, 0.7);
+$color-opa-white-08: rgba(255, 255, 255, 0.8);
+$color-opa-white-09: rgba(255, 255, 255, 0.9);
+
+@font-face {
+    font-family: "gost";
+    src: url("../fonts/gost.ttf") format("truetype");
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body {
+    background: #303030;
+    font-family: "gost", Arial, sans-serif;
+    overflow: hidden;
+    font-size: 24px;
+}
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+}
+
+.delete-text {
+    font-size: 30px;
+    margin: 15px auto;
+    color: $color-opa-white-08;
+}
+.instruction {
+    margin: 0 50px 15px;
+    color: $color-opa-white-06;
+    span{
+        color: $color-opa-white-08;
+    }
+    .copy{
+        cursor: pointer;
+    }
+}
+.ps{
+    margin: 0 50px;
+    color: $color-opa-white-03;
+}
+.footer{
+    color: $color-opa-white-01;
+    margin: 15px auto;
+    font-size: 16px;
+}
+.languages{
+    margin: 65px auto;
+    span{
+        padding: 16px 14px 11px 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 100px;
+        background: $color-blue;        
+    }
+    .langru{
+        color: $color-opa-white-08;
+        border: 1px solid white;
+        cursor: default;
+    }
+    .langen{
+        color: $color-opa-white-05;
+        border: 1px solid $color-opa-white-05;
+        cursor: pointer;
+    }
+}
