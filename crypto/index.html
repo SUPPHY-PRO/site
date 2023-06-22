@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SUPPHY | Crypto</title>
+    <link rel="stylesheet" href="/resources/css/crypto.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <textarea
+        placeholder="Текст"
+        name="text"
+        id="input"
+        cols="50"
+        rows="10"
+        class="input field"
+      ></textarea>
+      <select name="text" id="select" class="select">
+        <option value="textToSeven">Текст -> 7 систему</option>
+        <option value="textToTwo">Текст -> 2 систему</option>
+        <option value="sevenToText">7 систему -> Текст</option>
+        <option value="twoToText">2 систему -> Текст</option>
+      </select>
+      <button id="convert" type="button" class="convert" pys-onClick="show_output">🔄</button>
+      
+      <textarea
+        readonly
+        name="text"
+        id="output"
+        cols="30"
+        rows="10"
+        class="output field noselect"
+      ></textarea>
+    </div>
+    <script src="/resources/scripts/cryptor.js"></script>
+  </body>
+</html>
