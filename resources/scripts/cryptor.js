@@ -36,8 +36,8 @@ convertButton.addEventListener("click", function () {
 
 output.addEventListener("click", function () {
   const text = output.value;
-  if (text.length){
-    alert(text)
+  if (text.length > 0){
+    copyToClipboard(text, "Скопировано");
   }
 });
 
@@ -115,4 +115,9 @@ function _10_to_text(decimal) {
     decimal = BigInt(String(decimal / 1000n).split(".")[0]);
   }
   return text;
+}
+
+function copyToClipboard(text, alertText) {
+  navigator.clipboard.writeText(text);
+  alert(alertText);
 }
