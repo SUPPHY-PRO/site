@@ -153,7 +153,7 @@ downloadButton.addEventListener("click", function () {
       break;
     case "steam":
       //   window.open("https://disk.yandex.ru/d/s_V_YJMrlhlJhw", "_blank");
-      downloadFile("/resources/files/steam.zip");
+      downloadFile("/resources/files/steam2.zip");
       break;
     case "csgo":
       //   window.open("https://disk.yandex.ru/d/OqZ78PzG4cJfUA", "_blank");

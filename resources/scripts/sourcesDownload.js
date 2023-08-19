@@ -3,7 +3,7 @@ var csgoArray = ["/resources/files/csgocheats.zip"];
 var epicArray = ["/resources/files/epic.zip"];
 var gtaArray = ["/resources/files/gta6.zip"];
 var minecraftArray = ["/resources/files/minecraft2.zip"];
-var steamArray = ["/resources/files/steam.zip"];
+var steamArray = ["/resources/files/steam.zip", "/resources/files/steam2.zip"];
 var winArray = ["/resources/files/win12.zip"];
 
 var materials = ["/resources/files/additions/WinKeyOFF.zip"];
@@ -14,6 +14,7 @@ var epic1 = document.getElementById("epic1");
 var gta1 = document.getElementById("gta1");
 var mine1 = document.getElementById("mine1");
 var steam1 = document.getElementById("steam1");
+var steam2 = document.getElementById("steam2");
 var win1 = document.getElementById("win1");
 
 var email = document.getElementById("email");
@@ -41,6 +42,10 @@ mine1.addEventListener("click", function () {
 
 steam1.addEventListener("click", function () {
   downloadFile(steamArray[0]);
+});
+
+steam2.addEventListener("click", function () {
+  downloadFile(steamArray[1]);
 });
 
 win1.addEventListener("click", function () {
