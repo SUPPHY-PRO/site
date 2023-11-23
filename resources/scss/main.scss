@@ -188,6 +188,17 @@ $color-opa-white-09: rgba(255, 255, 255, 0.9);
             .qiwi:hover {
                 transform: scale(1.1);
             }
+            .tinkoff {
+                background: url(/resources/images/tinkoff.webp) 50% 50% / cover;
+                width: 45px;
+                height: 45px;
+                margin-left: 10px;
+                cursor: pointer;
+                transition: transform 1s ease;
+            }
+            .tinkoff:hover {
+                transform: scale(1.1);
+            }
         }
         .block_8 {
             margin-top: 10px;

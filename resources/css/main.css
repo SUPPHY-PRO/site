@@ -241,6 +241,17 @@ h1, h2, h3, h4, h5, h6 {
   body .block_7 .qiwi:hover {
     transform: scale(1.1);
   }
+  body .block_7 .tinkoff {
+    background: url(/resources/images/tinkoff.webp) 50% 50%/cover;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 1s ease;
+  }
+  body .block_7 .tinkoff:hover {
+    transform: scale(1.1);
+  }
   body .block_8 {
     margin-top: 10px;
     display: flex;

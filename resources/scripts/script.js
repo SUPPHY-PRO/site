@@ -16,6 +16,7 @@ var discriptionText = document.getElementById("discription");
 var ytImage = document.getElementById("yt");
 var tgImage = document.getElementById("tg");
 var qiwiImage = document.getElementById("qiwi");
+var tinkoffImage = document.getElementById("tinkoff");
 var imagesArray = [
   "/resources/images/win12.webp",
   "/resources/images/epic.webp",
@@ -46,6 +47,10 @@ tgImage.addEventListener("click", function () {
 
 qiwiImage.addEventListener("click", function () {
   window.open("https://qiwi.com/n/SUPPHY", "_blank");
+});
+
+tinkoffImage.addEventListener("click", function () {
+  window.open("https://www.tinkoff.ru/rm/kalantarov.ilya1/aOSxj54446", "_blank");
 });
 
 windowsButton.addEventListener("click", function () {
