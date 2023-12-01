@@ -222,6 +222,9 @@ function hoverBack() {
     case "csgo":
       csgoButton.classList.remove("hover");
       break;
+    case "fnite":
+      fortniteButton.classList.remove("hover");
+      break;
     case "other":
       otherButton.classList.remove("hover");
       break;
