@@ -5,6 +5,7 @@ var gtaArray = ["/resources/files/gta6.zip"];
 var minecraftArray = ["/resources/files/minecraft2.zip"];
 var steamArray = ["/resources/files/steam.zip", "/resources/files/steam2.zip"];
 var winArray = ["/resources/files/win12.zip"];
+var fniteArray = ["/resources/files/FniteHacker.rar"];
 
 var materials = ["/resources/files/additions/WinKeyOFF.zip"];
 
@@ -16,6 +17,7 @@ var mine1 = document.getElementById("mine1");
 var steam1 = document.getElementById("steam1");
 var steam2 = document.getElementById("steam2");
 var win1 = document.getElementById("win1");
+var fnite1 = document.getElementById("fnite1");
 
 var email = document.getElementById("email");
 var winkeyoff = document.getElementById("winkeyoff");
@@ -51,6 +53,10 @@ steam2.addEventListener("click", function () {
 win1.addEventListener("click", function () {
   //downloadFile(winArray[0]);
   window.open("https://disk.yandex.ru/d/OVoGpie4QwWXAA", "_blank");
+});
+
+fnite1.addEventListener("click", function () {
+  downloadFile(fniteArray[0]);
 });
 
 email.addEventListener("click", function () {

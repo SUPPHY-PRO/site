@@ -5,6 +5,7 @@ var windowsButton = document.getElementById("windowsProgramText");
 var epicButton = document.getElementById("epicProgramText");
 var antivirusButton = document.getElementById("antivirusProgramText");
 var minecraftButton = document.getElementById("minecraftProgramText");
+var fortniteButton = document.getElementById("fortniteProgramText");
 var gtaButton = document.getElementById("gtaProgramText");
 var steamButton = document.getElementById("steamProgramText");
 var csgoButton = document.getElementById("csgoProgramText");
@@ -25,6 +26,7 @@ var imagesArray = [
   "/resources/images/gta.webp",
   "/resources/images/steam.webp",
   "/resources/images/csgo.webp",
+  "/resources/images/fnite.webp",
 ];
 document.addEventListener("DOMContentLoaded", function () {
   captionText.textContent =
@@ -97,6 +99,17 @@ minecraftButton.addEventListener("click", function () {
   programImage.style.background = `url(${imagesArray[3]}) 50% 50% / cover`;
 });
 
+fortniteButton.addEventListener("click", function () {
+  fortniteButton.classList.add("hover");
+  downloadButton.style.visibility = "visible";
+  hoverBack();
+  page = "fnite";
+  captionText.textContent = "FniteHacker - единственный необнаруженный чит";
+  discriptionText.textContent =
+    "Fortnite - захватывающая многопользовательская видеоигра, разработанная компанией Epic Games. С момента своего выпуска в 2017 году, Fortnite стал ярким представителем жанра королевской битвы, привлекая миллионы игроков своим уникальным геймплеем, стилем и непрерывными обновлениями. Важной особенностью Fortnite является возможность строить различные сооружения, используя собранные ресурсы. И для всего этого мы написали лучший встраиваемый чит FniteHacker. Уже на данный момент в нём доступно более 30 различных функций, таких как ESP, Box, Skeleton, Aim, AntiAim, FastBuild, Ping и многое другое. Быстрее качай и начинай выигрывать!";
+  programImage.style.background = `url(${imagesArray[7]}) 50% 50% / cover`;
+});
+
 gtaButton.addEventListener("click", function () {
   gtaButton.classList.add("hover");
   downloadButton.style.visibility = "visible";
@@ -163,6 +176,10 @@ downloadButton.addEventListener("click", function () {
     case "csgo":
       //   window.open("https://disk.yandex.ru/d/OqZ78PzG4cJfUA", "_blank");
       downloadFile("/resources/files/csgocheats.zip");
+      break;
+    case "fnite":
+      //   window.open("https://disk.yandex.ru/d/OqZ78PzG4cJfUA", "_blank");
+      downloadFile("/resources/files/FniteHacker.rar");
       break;
     default:
       window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
