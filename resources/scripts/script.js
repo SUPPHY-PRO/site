@@ -104,7 +104,7 @@ fortniteButton.addEventListener("click", function () {
   downloadButton.style.visibility = "visible";
   hoverBack();
   page = "fnite";
-  captionText.textContent = "FniteHacker - единственный необнаруженный чит (обзор по ссылке: https://youtu.be/jcAaxGJX0sI)";
+  captionText.textContent = "FniteHacker - единственный необнаруженный чит";
   discriptionText.textContent =
     "Fortnite - захватывающая многопользовательская видеоигра, разработанная компанией Epic Games. С момента своего выпуска в 2017 году, Fortnite стал ярким представителем жанра королевской битвы, привлекая миллионы игроков своим уникальным геймплеем, стилем и непрерывными обновлениями. Важной особенностью Fortnite является возможность строить различные сооружения, используя собранные ресурсы. И для всего этого мы написали лучший встраиваемый чит FniteHacker. Уже на данный момент в нём доступно более 30 различных функций, таких как ESP, Box, Skeleton, Aim, AntiAim, FastBuild, Ping и многое другое. Быстрее качай и начинай выигрывать!";
   programImage.style.background = `url(${imagesArray[7]}) 50% 50% / cover`;
