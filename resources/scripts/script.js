@@ -195,7 +195,7 @@ downloadButton.addEventListener("click", function () {
       break;
     case "fnite":
       //   window.open("https://disk.yandex.ru/d/OqZ78PzG4cJfUA", "_blank");
-      downloadFile("/resources/files/FniteHacker.rar");
+      downloadFile("/resources/files/FniteHacker.zip");
       break;
     default:
       window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
