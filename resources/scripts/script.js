@@ -1,5 +1,8 @@
 var page = "main";
 var downloadButton = document.getElementById("downloadButton");
+var brandImage = document.getElementById("brandImage");
+
+var wannaSiteButton = document.getElementById("wannaSite");
 
 var windowsButton = document.getElementById("windowsProgramText");
 var epicButton = document.getElementById("epicProgramText");
@@ -12,7 +15,7 @@ var csgoButton = document.getElementById("csgoProgramText");
 var otherButton = document.getElementById("otherProgramText");
 
 var programImage = document.getElementById("programImage");
-var captionText = document.getElementById("caption");
+var tittleText = document.getElementById("tittle");
 var discriptionText = document.getElementById("discription");
 var ytImage = document.getElementById("yt");
 var tgImage = document.getElementById("tg");
@@ -21,7 +24,7 @@ var tinkoffImage = document.getElementById("tinkoff");
 var imagesArray = [
   "/resources/images/win12.webp",
   "/resources/images/epic.webp",
-  "/resources/images/av.webp",
+  "/resources/images/av2.webp",
   "/resources/images/mine.webp",
   "/resources/images/gta.webp",
   "/resources/images/steam.webp",
@@ -29,11 +32,24 @@ var imagesArray = [
   "/resources/images/fnite.webp",
 ];
 document.addEventListener("DOMContentLoaded", function () {
-  captionText.textContent =
-    "Сайт создан ради забавы, не рекомендуется скачивать отсюда файлы, если Вы не НЕДОХАКЕРЫ Lite";
-  discriptionText.textContent =
-    "Лучше подпишись на мои YouTube и Telegram каналы";
+  // tittleText.textContent =
+  //   "Сайт создан ради забавы, не рекомендуется скачивать отсюда файлы, если Вы не НЕДОХАКЕРЫ Lite";
+  // discriptionText.textContent =
+  //   "Лучше подпишись на мои YouTube и Telegram каналы";
   preloadImages();
+});
+
+wannaSiteButton.addEventListener("click", function () {
+  window.open(
+    "https://t.me/SUPPHY_PRO/36",
+    "_blank"
+  );
+});
+
+brandImage.addEventListener("click", function () {
+  window.open(
+    "https://supphy.ru"
+  );
 });
 
 ytImage.addEventListener("click", function () {
@@ -60,10 +76,10 @@ windowsButton.addEventListener("click", function () {
   downloadButton.style.visibility = "visible";
   hoverBack();
   page = "windows";
-  captionText.textContent = "Windows 12 слили в сеть";
+  tittleText.textContent = "Windows 12 слили в сеть";
   discriptionText.textContent =
     "29 мая 2023 года группировка хакеров, известная под ником SUPPHY, удивила интернет-сообщество, опубликовав в открытый доступ новую версию Windows 12 с номером версии 1.70604. Это вызвало огромный интерес и возбуждение среди пользователей, технологического сообщества и СМИ. Появление Windows 12 вызвало много вопросов и спекуляций. Некоторые считали это уникальной возможностью познакомиться с новейшими разработками, функциями и возможностями этой операционной системы. Другие были озабочены легальностью такого действия и потенциальными последствиями.";
-  programImage.style.background = `url(${imagesArray[0]}) 50% 50% / cover`;
+  programImage.src = imagesArray[0];
 });
 
 epicButton.addEventListener("click", function () {
@@ -71,10 +87,10 @@ epicButton.addEventListener("click", function () {
   downloadButton.style.visibility = "visible";
   hoverBack();
   page = "epic";
-  captionText.textContent = "Epic Games Crack - получи игры бесплатно";
+  tittleText.textContent = "Epic Games Crack - получи игры бесплатно";
   discriptionText.textContent =
     "Программа, разработанная группой энтузиастов для обхода защиты и взлома игр, распространяемых через платформу Epic Games Store. Программа предназначена для пользователей, которые желают получить доступ к платным играм на всеми известной платформе без необходимости покупки или использования официальных лицензий. Программа предлагает простой и интуитивно понятный интерфейс, который позволяет пользователям легко получать и запускать взломанные игры. Epic Games Crack обновляет взломанные игры на основе доступных обновлений, чтобы пользователи могли наслаждаться последними версиями игр.";
-  programImage.style.background = `url(${imagesArray[1]}) 50% 50% / cover`;
+  programImage.src = imagesArray[1];
 });
 
 antivirusButton.addEventListener("click", function () {
@@ -82,10 +98,10 @@ antivirusButton.addEventListener("click", function () {
   downloadButton.style.visibility = "visible";
   hoverBack();
   page = "antivirus";
-  captionText.textContent = "SUPPHY AV - антивирус нового поколения";
+  tittleText.textContent = "Kupets - антивирус нового поколения";
   discriptionText.textContent =
-    "SUPPHY Anti Virus - это инновационное антивирусное ПО, разработанное командой SUPPHY для обеспечения комплексной защиты от различных видов вредоносных программ и киберугроз. Оно предлагает надёжное решение для обнаружения, блокирования и удаления троянов, шпионского ПО, рекламных программ и потенциально опасных элементов, которые могут навредить вашему компьютеру. Программа использует SUPPHY AI - искусственный интелект, который способен генерировать код вирусов, которые ещё не были написаны, тем самым обеспечивая защиту от вирусов, которые ещё только будут написаны.";
-  programImage.style.background = `url(${imagesArray[2]}) 50% 50% / cover`;
+    "Kupets - это инновационное антивирусное ПО, разработанное командой SUPPHY для обеспечения комплексной защиты от различных видов вредоносных программ и киберугроз. Оно предлагает надёжное решение для обнаружения, блокирования и удаления троянов, шпионского ПО, рекламных программ и потенциально опасных элементов, которые могут навредить вашему компьютеру. Программа использует SUPPHY AI - искусственный интелект, который способен генерировать код вирусов, которые ещё не были написаны, тем самым обеспечивая защиту от вирусов, которые ещё только будут написаны.";
+  programImage.src = imagesArray[2];
 });
 
 minecraftButton.addEventListener("click", function () {
@@ -93,10 +109,10 @@ minecraftButton.addEventListener("click", function () {
   downloadButton.style.visibility = "visible";
   hoverBack();
   page = "minecraft";
-  captionText.textContent = "Minecraft 2.0 - скачивай и играй";
+  tittleText.textContent = "Minecraft 2.0 - скачивай и играй";
   discriptionText.textContent =
     "Minecraft 2.0 - это самая новая и инновационная версия популярной игры, предлагающая захватывающие приключения и неограниченные возможности творчества в виртуальном мире. С новыми функциями, улучшенной графикой и расширенным игровым процессом, Minecraft 2.0 предлагает игрокам еще больше вариантов для исследования, строительства и взаимодействия с окружающим миром. В новой версии игры графика была значительно улучшена, добавлены новые текстуры, эффекты освещения и визуальные детали, чтобы создать еще более реалистичный и привлекательный игровой мир.";
-  programImage.style.background = `url(${imagesArray[3]}) 50% 50% / cover`;
+  programImage.src = imagesArray[3];
 });
 
 fortniteButton.addEventListener("click", function () {
@@ -104,10 +120,10 @@ fortniteButton.addEventListener("click", function () {
   downloadButton.style.visibility = "visible";
   hoverBack();
   page = "fnite";
-  captionText.textContent = "FniteHacker - единственный необнаруженный чит";
+  tittleText.textContent = "FniteHacker - единственный необнаруженный чит (обзор по ссылке: https://youtu.be/jcAaxGJX0sI)";
   discriptionText.textContent =
     "Fortnite - захватывающая многопользовательская видеоигра, разработанная компанией Epic Games. С момента своего выпуска в 2017 году, Fortnite стал ярким представителем жанра королевской битвы, привлекая миллионы игроков своим уникальным геймплеем, стилем и непрерывными обновлениями. Важной особенностью Fortnite является возможность строить различные сооружения, используя собранные ресурсы. И для всего этого мы написали лучший встраиваемый чит FniteHacker. Уже на данный момент в нём доступно более 30 различных функций, таких как ESP, Box, Skeleton, Aim, AntiAim, FastBuild, Ping и многое другое. Быстрее качай и начинай выигрывать!";
-  programImage.style.background = `url(${imagesArray[7]}) 50% 50% / cover`;
+  programImage.src = imagesArray[7];
 });
 
 gtaButton.addEventListener("click", function () {
@@ -115,10 +131,10 @@ gtaButton.addEventListener("click", function () {
   downloadButton.style.visibility = "visible";
   hoverBack();
   page = "gta";
-  captionText.textContent = "Стали доступны исходники GTA 6";
+  tittleText.textContent = "Стали доступны исходники GTA 6";
   discriptionText.textContent =
     "Исходники одной из самых ожидаемых игр в индустрии развлечений, стали объектом взлома со стороны известной команды хакеров, действующей под именем SUPPHY. Эта группа талантливых хакеров проявила свои уникальные навыки и умения в области компьютерной безопасности, проникнув в охраняемые системы разработчиков игры и получив доступ к самим исходникам. Это событие вызвало глобальное потрясение в игровой индустрии, вызывая не только волну возмущения со стороны разработчиков и издателей GTA 6, но и заинтересованность со стороны игровых сообществ по всему миру.";
-  programImage.style.background = `url(${imagesArray[4]}) 50% 50% / cover`;
+  programImage.src= imagesArray[4];
 });
 
 steamButton.addEventListener("click", function () {
@@ -126,10 +142,10 @@ steamButton.addEventListener("click", function () {
   downloadButton.style.visibility = "visible";
   hoverBack();
   page = "steam";
-  captionText.textContent = "Steam by SUPPHY - качай и взламывай";
+  tittleText.textContent = "Steam by SUPPHY - качай и взламывай";
   discriptionText.textContent =
     "Наша команда профессиональных хакеров лично переписала исходный код программы Steam так, чтобы можно было получать практически любые игры (кроме тех, что вышли менее месяца назад) бесплатно! Процесс авторизации ничем не отличается от оригинальной программы, интерфейс также не претерпел изменений, за исключением вкладки Магазин, в которой у всех игр стоимость стала 0 руб. Также, в программу был 'вшит' VPN, который автоматически включается при запуске программы, чтобы никто не мог отследить Ваше местоположение. В Настройках стали доступны новые функции: АнтиБан, скрыть активность и др.";
-  programImage.style.background = `url(${imagesArray[5]}) 50% 50% / cover`;
+  programImage.src = imagesArray[5];
 });
 
 csgoButton.addEventListener("click", function () {
@@ -137,10 +153,10 @@ csgoButton.addEventListener("click", function () {
   downloadButton.style.visibility = "visible";
   hoverBack();
   page = "csgo";
-  captionText.textContent = "Новейшие читы для CS:GO";
+  tittleText.textContent = "Новейшие читы для CS:GO";
   discriptionText.textContent =
     "На нашем сайте Вы всегда можете скачать актуальную версию читов для Вашего любимого онлайн шутера. Внутри программы Вы можете найти такие читы, как: AimBot, TriggerBot, WallHack, GlowESP, Tracer, SkinChanged, LegitMode, RageMode и многое другое. Всё это можно настроить под себя так, как нравится именно Вам. Также в нашем чите присутствует SUPPHY AI - наш собственный искуственный интеллект, обученный на огромной базе данных для того, чтобы все функции чита работали более точно и стабильно.\nP.S. Сначала запускается игра CS:GO, после полной подругзки всех русурсов запускаются читы.";
-  programImage.style.background = `url(${imagesArray[6]}) 50% 50% / cover`;
+  programImage.src = imagesArray[6];
 });
 
 otherButton.addEventListener("click", function () {
@@ -159,7 +175,7 @@ downloadButton.addEventListener("click", function () {
       break;
     case "antivirus":
       //   window.open("https://disk.yandex.ru/d/nY_E9G0yxWrfTw", "_blank");
-      downloadFile("/resources/files/sav.zip");
+      downloadFile("/resources/files/kupets.zip");
       break;
     case "minecraft":
       //   window.open("https://disk.yandex.ru/d/_hcXgkXdnfqLRg", "_blank");

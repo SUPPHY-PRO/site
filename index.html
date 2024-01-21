@@ -6,74 +6,47 @@
     <link rel="stylesheet" href="../resources/css/main.css" />
   </head>
   <body>
-    <div class="block">
-      <div class="block_1">
-        <div class="block_8">
-          <div
-            onclick="window.location.href = 'https://supphy.ru'"
-            class="icon"
-          ></div>
-          <span onclick="window.location.href = 'https://supphy.ru'"
-            >SUPPHY.RU</span
-          >
+    <div class="main-grid">
+      <div class="left-grid border noselect">
+        <div class="brand-grid border">
+          <img id="brandImage" src="../resources/images/icon.png" alt="image" class="brang-image">
+          <a href="https://supphy.ru" class="brand-name">SUPPHY.RU</a>
         </div>
-        <hr class="line" />
-        <div class="block_10 noselect">
-          <div id="windowsProgramText" class="left-program">
-            <p class="noselect">Windows 12</p>
-            <span>➤</span>
-          </div>
-          <div id="epicProgramText" class="left-program">
-            <p>Epic Games</p>
-            <span>➤</span>
-          </div>
-          <div id="antivirusProgramText" class="left-program">
-            <p>Anti Virus</p>
-            <span>➤</span>
-          </div>
-          <div id="minecraftProgramText" class="left-program">
-            <p>Minecraft</p>
-            <span>➤</span>
-          </div>
-          <div id="fortniteProgramText" class="left-program">
-            <p>Fortnite</p>
-            <span>➤</span>
-          </div>
-          <div id="gtaProgramText" class="left-program">
-            <p>GTA 6</p>
-            <span>➤</span>
-          </div>
-          <div id="steamProgramText" class="left-program">
-            <p>Steam</p>
-            <span>➤</span>
-          </div>
-          <div id="csgoProgramText" class="left-program">
-            <p>CS:GO</p>
-            <span>➤</span>
-          </div>
-          <div id="otherProgramText" class="left-program">
-            <p>Другое</p>
-            <span>➤</span>
-          </div>
+        <div class="separator"></div>
+        <div class="programs-grid border">
+          <p class="program-item border" id="windowsProgramText">Windows 12 <span class="arrow">➤</span></p>
+          <p class="program-item border" id="epicProgramText">Epic Games <span class="arrow">➤</span></p>
+          <p class="program-item border" id="antivirusProgramText">Anti Virus <span class="arrow">➤</span></p>
+          <p class="program-item border" id="minecraftProgramText">Minecraft <span class="arrow">➤</span></p>
+          <p class="program-item border" id="fortniteProgramText">Fortnite <span class="arrow">➤</span></p>
+          <p class="program-item border" id="gtaProgramText">GTA 6 <span class="arrow">➤</span></p>
+          <p class="program-item border" id="steamProgramText">Steam <span class="arrow">➤</span></p>
+          <p class="program-item border" id="csgoProgramText">CS:GO <span class="arrow">➤</span></p>
+          <p class="program-item border" id="otherProgramText">Другое <span class="arrow">➤</span></p>
         </div>
-        <div class="designed">Designed by: <span>SUPPHY</span></div>
+        <div class="designed border">
+          <span class="designed-text">Designed by: </span>
+          <span class="designed-text">SUPPHY</span>
+        </div>
       </div>
-      <div class="block_2">
-        <div id="caption" class="block_4"></div>
-        <div id="discription" class="block_5"></div>
-        <div class="block_6">
-          <div id="downloadButton" class="download-button noselect">
+      <div class="right-grid border">
+        <div class="program-info-grid border">
+          <div class="tittle border" id="tittle">Сайт создан ради забавы, не рекомендуется скачивать отсюда файлы, если Вы не <a target="_blank" href="https://www.youtube.com/@nedohackerslite" class="nedohackers">НЕДОХАКЕРЫ Lite</a></div>
+          <div class="discription border" id="discription">Лучше подпишись на мои <a target="_blank" href="https://www.youtube.com/channel/UCmPjTsx2AqQQVftOwofk0Kw" class="my-yt">YouTube</a> и <a target="_blank" href="https://t.me/SUPPHY_PRO" class="my-tg">Telegram</a> каналы <p class="hidden" id="wannaSite">хочу страницу на этом сайте</p></div>
+          <div class="download border noselect" id="downloadButton">
             <span>Скачать | Download</span>
           </div>
+          <div class="links border noselect">
+            <img src="../resources/images/yt.webp" id="yt" alt="image" class="youtube link border">
+            <img src="../resources/images/tg.webp" id="tg" alt="image" class="telegram link border">
+            <img src="../resources/images/qiwi.webp" id="qiwi" alt="image" class="qiwi link border">
+            <img src="../resources/images/tinkoff.webp" id="tinkoff" alt="image" class="tinkoff link border">
+          </div>
         </div>
-        <div class="block_7">
-          <div id="yt" class="youtube"></div>
-          <div id="tg" class="telegram"></div>
-          <div id="qiwi" class="qiwi"></div>
-          <div id="tinkoff" class="tinkoff"></div>
+        <div class="program-image border noselect">
+          <img id="programImage" src="" alt="image" class="image border">
         </div>
       </div>
-      <div id="programImage" class="block_3"></div>
     </div>
     <script src="/resources/scripts/script.js"></script>
   </body>

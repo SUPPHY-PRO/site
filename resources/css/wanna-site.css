@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul il {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background: #303030;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@font-face {
+  font-family: "gost";
+  src: url("../fonts/gost.ttf") format("truetype");
+}
+.main-grid {
+  padding: 30px 0 0 0;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  color: #ddd;
+  font-family: gost;
+}
+.main-grid .form-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+}
+.main-grid .form-grid .instruction-grid {
+  display: grid;
+  gap: 7px;
+}
+.main-grid .form-grid .instruction-grid p {
+  font-size: 20px;
+}
+.main-grid .form-grid .text-field {
+  width: 600px;
+  border-radius: 15px;
+  background: #252525;
+  border: 2px solid #202020;
+  resize: none;
+  padding: 10px;
+  color: #ddd;
+  font-size: 18px;
+}
+.main-grid .form-grid .send {
+  justify-self: center;
+  padding: 8px 40px;
+  border-radius: 100px;
+  color: #ddd;
+  font-size: 18px;
+  border: 2px solid #202020;
+  background: #252525;
+}
+.main-grid form > p {
+  font-size: 35px;
+  justify-self: center;
+}
+.main-grid .back-button {
+  cursor: pointer;
+  background: #202020;
+  padding: 8px 50px;
+  border-radius: 100px;
+  color: #ddd;
+  font-size: 18px;
+  border: 2px solid #202020;
+  background: #252525;
+}/*# sourceMappingURL=wanna-site.css.map */

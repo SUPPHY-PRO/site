@@ -69,10 +69,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-@font-face {
-  font-family: "gost";
-  src: url("../fonts/gost.ttf") format("truetype");
+body {
+  background: #303030;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -80,1071 +84,165 @@ h1, h2, h3, h4, h5, h6 {
   user-select: none;
 }
 
-.block_3 {
-  visibility: hidden;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+@font-face {
+  font-family: "gost";
+  src: url("../fonts/gost.ttf") format("truetype");
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100%;
 }
 
-@media screen and (max-width: 2500px) {
-  body {
-    background: #303030;
-    font-family: "gost", Arial, sans-serif;
-    overflow: hidden;
-  }
-  body .block {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-  }
-  body div {
-    color: white;
-  }
-  body p {
-    color: white;
-  }
-  body .block_1 {
-    width: 20%;
-    max-width: 250px;
-    min-width: 200px;
-    background: #4882b8;
-  }
-  body .block_1 .line {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 40px 30px;
-    padding: 0;
-  }
-  body .block_1 .block_10 {
-    position: relative;
-    margin: 0 35px;
-    bottom: 0px;
-  }
-  body .block_1 .block_10 .left-program {
-    display: flex;
-    font-size: 25px;
-    margin-top: 15px;
-    padding: 10px 15px;
-    border-radius: 105px;
-    transition: transform 1s ease;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }
-  body .block_1 .block_10 .left-program p {
-    margin-top: 6px;
-  }
-  body .block_1 .block_10 .left-program span {
-    margin: 8px 0 auto auto;
-    font-size: 20px;
-  }
-  body .block_1 .block_10 .left-program:first-child {
-    margin-top: 0;
-  }
-  body .block_1 .block_10 .left-program:hover {
-    transform: translateX(15px);
-    background: #447cb0;
-  }
-  body .block_1 .block_10 .left-program.hover {
-    transform: translateX(15px);
-  }
-  body .block_1 .designed {
-    margin: 45px 10px 0 10px;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  body .block_1 .designed span {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  body .block_2 {
-    margin: 3% 0px 0px 3%;
-    width: 35%;
-  }
-  body .block_2 .block_4 {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  body .block_2 .block_5 {
-    font-size: 26.3px;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.1;
-  }
-  body .block_3 {
-    width: 30vw;
-    height: 30vw;
-    margin: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 20px;
-  }
-  body .block_4 {
-    height: 15%;
-    min-height: 100px;
-  }
-  body .block_5 {
-    height: 60%;
-  }
-  body .block_6 {
-    align-items: center;
-    height: 15%;
-  }
-  body .block_6 .download-button {
-    visibility: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 0 auto;
-    text-align: center;
-    font-size: 27px;
-    background-color: #4882b8;
-    border-radius: 100px;
-    max-width: 350px;
-    min-width: 310px;
-    min-height: 50%;
-    padding: 16px 60px 12px 60px;
-    cursor: pointer;
-    transition: transform 1.2s ease;
-  }
-  body .block_6 .download-button:hover {
-    transform: scale(1.04);
-  }
-  body .block_7 {
-    height: 10%;
-    display: flex;
-  }
-  body .block_7 .youtube {
-    background: url(/resources/images/yt.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .youtube:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .telegram {
-    background: url(/resources/images/tg.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .telegram:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .qiwi {
-    background: url(/resources/images/qiwi.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .qiwi:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .tinkoff {
-    background: url(/resources/images/tinkoff.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .tinkoff:hover {
-    transform: scale(1.1);
-  }
-  body .block_8 {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body .block_8 span {
-    text-align: center;
-    margin-left: 5%;
-    margin-top: 6px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  body .icon {
-    background: url(/resources/images/icon.png) 50% 50%/cover;
-    height: 65px;
-    width: 65px;
-    cursor: pointer;
-  }
+.left-grid {
+  display: grid;
+  gap: 25px;
+  background: #4882b8;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1px 5fr 1fr;
 }
-@media screen and (max-width: 1440px) {
-  body {
-    background: #303030;
-    font-family: "gost", Arial, sans-serif;
-    overflow: hidden;
-  }
-  body .block {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  body div {
-    color: white;
-  }
-  body p {
-    color: white;
-  }
-  body .block_1 {
-    width: 20%;
-    max-width: 250px;
-    min-width: 200px;
-    background: #4882b8;
-  }
-  body .block_1 .line {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 40px 30px;
-    padding: 0;
-  }
-  body .block_1 .block_10 {
-    position: relative;
-    margin: 0 35px;
-    bottom: 0px;
-  }
-  body .block_1 .block_10 .left-program {
-    display: flex;
-    font-size: 25px;
-    margin-top: 15px;
-    padding: 10px 15px;
-    border-radius: 105px;
-    transition: transform 1s ease;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }
-  body .block_1 .block_10 .left-program p {
-    margin-top: 6px;
-  }
-  body .block_1 .block_10 .left-program span {
-    margin: 8px 0 auto auto;
-    font-size: 20px;
-  }
-  body .block_1 .block_10 .left-program:first-child {
-    margin-top: 0;
-  }
-  body .block_1 .block_10 .left-program:hover {
-    transform: translateX(15px);
-    background: #447cb0;
-  }
-  body .block_1 .block_10 .left-program.hover {
-    transform: translateX(15px);
-  }
-  body .block_1 .designed {
-    margin: 45px 10px 0 10px;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  body .block_1 .designed span {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  body .block_2 {
-    margin: 3% 0px 0px 3%;
-    width: 35%;
-  }
-  body .block_2 .block_4 {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  body .block_2 .block_5 {
-    font-size: 26px;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.1;
-  }
-  body .block_3 {
-    width: 30vw;
-    height: 30vw;
-    margin: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 20px;
-  }
-  body .block_4 {
-    height: 15%;
-    min-height: 100px;
-  }
-  body .block_5 {
-    height: 60%;
-  }
-  body .block_6 {
-    align-items: center;
-    height: 15%;
-  }
-  body .block_6 .download-button {
-    visibility: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 0 auto;
-    text-align: center;
-    font-size: 27px;
-    background-color: #4882b8;
-    border-radius: 100px;
-    max-width: 350px;
-    min-width: 310px;
-    min-height: 50%;
-    padding: 16px 60px 12px 60px;
-    cursor: pointer;
-    transition: transform 1.2s ease;
-  }
-  body .block_6 .download-button:hover {
-    transform: scale(1.04);
-  }
-  body .block_7 {
-    height: 10%;
-    display: flex;
-  }
-  body .block_7 .youtube {
-    background: url(/resources/images/yt.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .youtube:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .telegram {
-    background: url(/resources/images/tg.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .telegram:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .qiwi {
-    background: url(/resources/images/qiwi.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .qiwi:hover {
-    transform: scale(1.1);
-  }
-  body .block_8 {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body .block_8 span {
-    text-align: center;
-    margin-left: 5%;
-    margin-top: 6px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  body .icon {
-    background: url(/resources/images/icon.png) 50% 50%/cover;
-    height: 65px;
-    width: 65px;
-    cursor: pointer;
-  }
+.left-grid .brand-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
 }
-@media screen and (max-width: 1357px) {
-  body {
-    background: #303030;
-    font-family: "gost", Arial, sans-serif;
-    overflow: hidden;
-  }
-  body .block {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-  }
-  body div {
-    color: white;
-  }
-  body p {
-    color: white;
-  }
-  body .block_1 {
-    width: 20%;
-    max-width: 250px;
-    min-width: 200px;
-    background: #4882b8;
-  }
-  body .block_1 .line {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 40px 30px;
-    padding: 0;
-  }
-  body .block_1 .block_10 {
-    position: relative;
-    margin: 0 35px;
-    bottom: 0px;
-  }
-  body .block_1 .block_10 .left-program {
-    display: flex;
-    font-size: 25px;
-    margin-top: 15px;
-    padding: 10px 15px;
-    border-radius: 105px;
-    transition: transform 1s ease;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }
-  body .block_1 .block_10 .left-program p {
-    margin-top: 6px;
-  }
-  body .block_1 .block_10 .left-program span {
-    margin: 8px 0 auto auto;
-    font-size: 20px;
-  }
-  body .block_1 .block_10 .left-program:first-child {
-    margin-top: 0;
-  }
-  body .block_1 .block_10 .left-program:hover {
-    transform: translateX(15px);
-    background: #447cb0;
-  }
-  body .block_1 .block_10 .left-program.hover {
-    transform: translateX(15px);
-  }
-  body .block_1 .designed {
-    margin: 45px 10px 0 10px;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  body .block_1 .designed span {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  body .block_2 {
-    margin: 3% 0px 0px 3%;
-    width: 35%;
-  }
-  body .block_2 .block_4 {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  body .block_2 .block_5 {
-    font-size: 24px;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.1;
-  }
-  body .block_3 {
-    width: 30vw;
-    height: 30vw;
-    margin: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 20px;
-  }
-  body .block_4 {
-    height: auto;
-  }
-  body .block_5 {
-    height: 60%;
-  }
-  body .block_6 {
-    align-items: center;
-    height: 15%;
-  }
-  body .block_6 .download-button {
-    visibility: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 0 auto;
-    text-align: center;
-    font-size: 27px;
-    background-color: #4882b8;
-    border-radius: 100px;
-    max-width: 350px;
-    min-width: 310px;
-    min-height: 50%;
-    padding: 16px 60px 12px 60px;
-    cursor: pointer;
-    transition: transform 1.2s ease;
-  }
-  body .block_6 .download-button:hover {
-    transform: scale(1.04);
-  }
-  body .block_7 {
-    height: 10%;
-    display: flex;
-  }
-  body .block_7 .youtube {
-    background: url(/resources/images/yt.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .youtube:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .telegram {
-    background: url(/resources/images/tg.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .telegram:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .qiwi {
-    background: url(/resources/images/qiwi.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .qiwi:hover {
-    transform: scale(1.1);
-  }
-  body .block_8 {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body .block_8 span {
-    text-align: center;
-    margin-left: 5%;
-    margin-top: 6px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  body .icon {
-    background: url(/resources/images/icon.png) 50% 50%/cover;
-    height: 65px;
-    width: 65px;
-    cursor: pointer;
-  }
+.left-grid .brand-grid img {
+  width: 65px;
+  justify-self: end;
+  cursor: pointer;
 }
-@media screen and (max-width: 1120px) {
-  body {
-    background: #303030;
-    font-family: "gost", Arial, sans-serif;
-    overflow: hidden;
-  }
-  body .block {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-  }
-  body div {
-    color: white;
-  }
-  body p {
-    color: white;
-  }
-  body .block_1 {
-    width: 20%;
-    max-width: 250px;
-    min-width: 200px;
-    background: #4882b8;
-  }
-  body .block_1 .line {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 40px 30px;
-    padding: 0;
-  }
-  body .block_1 .block_10 {
-    position: relative;
-    margin: 0 35px;
-    bottom: 0px;
-  }
-  body .block_1 .block_10 .left-program {
-    display: flex;
-    font-size: 20px;
-    margin-top: 15px;
-    padding: 10px 15px;
-    border-radius: 105px;
-    transition: transform 1s ease;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }
-  body .block_1 .block_10 .left-program p {
-    margin-top: 6px;
-  }
-  body .block_1 .block_10 .left-program span {
-    margin: 8px 0 auto auto;
-    font-size: 16px;
-  }
-  body .block_1 .block_10 .left-program:first-child {
-    margin-top: 0;
-  }
-  body .block_1 .block_10 .left-program:hover {
-    transform: translateX(15px);
-    background: #447cb0;
-  }
-  body .block_1 .block_10 .left-program.hover {
-    transform: translateX(15px);
-  }
-  body .block_1 .designed {
-    margin: 45px 10px 0 10px;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  body .block_1 .designed span {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  body .block_2 {
-    margin: 3% 0px 0px 3%;
-    width: 35%;
-  }
-  body .block_2 .block_4 {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  body .block_2 .block_5 {
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.1;
-  }
-  body .block_3 {
-    width: 30vw;
-    height: 30vw;
-    margin: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 20px;
-  }
-  body .block_4 {
-    height: auto;
-  }
-  body .block_5 {
-    height: 60%;
-  }
-  body .block_6 {
-    align-items: center;
-    height: 15%;
-  }
-  body .block_6 .download-button {
-    visibility: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 0 auto;
-    text-align: center;
-    font-size: 27px;
-    background-color: #4882b8;
-    border-radius: 100px;
-    max-width: 350px;
-    min-width: 310px;
-    min-height: 50%;
-    padding: 16px 60px 12px 60px;
-    cursor: pointer;
-    transition: transform 1.2s ease;
-  }
-  body .block_6 .download-button:hover {
-    transform: scale(1.04);
-  }
-  body .block_7 {
-    height: 10%;
-    display: flex;
-  }
-  body .block_7 .youtube {
-    background: url(/resources/images/yt.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .youtube:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .telegram {
-    background: url(/resources/images/tg.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .telegram:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .qiwi {
-    background: url(/resources/images/qiwi.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .qiwi:hover {
-    transform: scale(1.1);
-  }
-  body .block_8 {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body .block_8 span {
-    text-align: center;
-    margin-left: 5%;
-    margin-top: 6px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  body .icon {
-    background: url(/resources/images/icon.png) 50% 50%/cover;
-    height: 55px;
-    width: 55px;
-    cursor: pointer;
-  }
+.left-grid .brand-grid a {
+  font-family: "gost";
+  color: #fff;
+  font-size: 20px;
 }
-@media screen and (max-width: 1000px) {
-  body {
-    background: #303030;
-    font-family: "gost", Arial, sans-serif;
-    overflow: hidden;
-  }
-  body .block {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-  }
-  body div {
-    color: white;
-  }
-  body p {
-    color: white;
-  }
-  body .block_1 {
-    width: 20%;
-    max-width: 250px;
-    min-width: 200px;
-    background: #4882b8;
-  }
-  body .block_1 .line {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 40px 30px;
-    padding: 0;
-  }
-  body .block_1 .block_10 {
-    position: relative;
-    margin: 0 35px;
-    bottom: 0px;
-  }
-  body .block_1 .block_10 .left-program {
-    display: flex;
-    font-size: 18px;
-    margin-top: 15px;
-    padding: 10px 15px;
-    border-radius: 105px;
-    transition: transform 1s ease;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }
-  body .block_1 .block_10 .left-program p {
-    margin-top: 6px;
-  }
-  body .block_1 .block_10 .left-program span {
-    margin: 8px 0 auto auto;
-    font-size: 16px;
-  }
-  body .block_1 .block_10 .left-program:first-child {
-    margin-top: 0;
-  }
-  body .block_1 .block_10 .left-program:hover {
-    transform: translateX(15px);
-    background: #447cb0;
-  }
-  body .block_1 .block_10 .left-program.hover {
-    transform: translateX(15px);
-  }
-  body .block_1 .designed {
-    margin: 45px 10px 0 10px;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  body .block_1 .designed span {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  body .block_2 {
-    margin: 3% 0px 0px 3%;
-    width: 35%;
-  }
-  body .block_2 .block_4 {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  body .block_2 .block_5 {
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.1;
-  }
-  body .block_3 {
-    width: 30vw;
-    height: 30vw;
-    margin: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 20px;
-  }
-  body .block_4 {
-    height: auto;
-  }
-  body .block_5 {
-    height: 60%;
-  }
-  body .block_6 {
-    align-items: center;
-    height: 15%;
-  }
-  body .block_6 .download-button {
-    visibility: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 0 auto;
-    text-align: center;
-    font-size: 22px;
-    background-color: #4882b8;
-    border-radius: 100px;
-    max-width: 350px;
-    min-width: 310px;
-    min-height: 50%;
-    padding: 16px 60px 12px 60px;
-    cursor: pointer;
-    transition: transform 1.2s ease;
-  }
-  body .block_6 .download-button:hover {
-    transform: scale(1.04);
-  }
-  body .block_7 {
-    height: 10%;
-    display: flex;
-  }
-  body .block_7 .youtube {
-    background: url(/resources/images/yt.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .youtube:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .telegram {
-    background: url(/resources/images/tg.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .telegram:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .qiwi {
-    background: url(/resources/images/qiwi.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .qiwi:hover {
-    transform: scale(1.1);
-  }
-  body .block_8 {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body .block_8 span {
-    text-align: center;
-    margin-left: 5%;
-    margin-top: 6px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  body .icon {
-    background: url(/resources/images/icon.png) 50% 50%/cover;
-    height: 55px;
-    width: 55px;
-    cursor: pointer;
-  }
+.left-grid .separator {
+  height: 1px;
+  border-top: 1px solid rgba(221, 221, 221, 0.5803921569);
+  margin: 0 30px;
 }
-@media screen and (max-width: 927px) {
-  body {
-    background: #303030;
-    font-family: "gost", Arial, sans-serif;
-    overflow: hidden;
-  }
-  body .block {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-  }
-  body div {
-    color: white;
-  }
-  body p {
-    color: white;
-  }
-  body .block_1 {
-    width: 20%;
-    max-width: 250px;
-    min-width: 200px;
-    background: #4882b8;
-  }
-  body .block_1 .line {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 40px 30px;
-    padding: 0;
-  }
-  body .block_1 .block_10 {
-    position: relative;
-    margin: 0 35px;
-    bottom: 0px;
-  }
-  body .block_1 .block_10 .left-program {
-    display: flex;
-    font-size: 18px;
-    margin-top: 15px;
-    padding: 10px 15px;
-    border-radius: 105px;
-    transition: transform 1s ease;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }
-  body .block_1 .block_10 .left-program p {
-    margin-top: 6px;
-  }
-  body .block_1 .block_10 .left-program span {
-    margin: 8px 0 auto auto;
-    font-size: 15px;
-  }
-  body .block_1 .block_10 .left-program:first-child {
-    margin-top: 0;
-  }
-  body .block_1 .block_10 .left-program:hover {
-    transform: translateX(15px);
-    background: #447cb0;
-  }
-  body .block_1 .block_10 .left-program.hover {
-    transform: translateX(15px);
-  }
-  body .block_1 .designed {
-    margin: 45px 10px 0 10px;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  body .block_1 .designed span {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  body .block_2 {
-    margin: 3% 0px 0px 3%;
-    width: 35%;
-  }
-  body .block_2 .block_4 {
-    font-size: 23px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  body .block_2 .block_5 {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.1;
-  }
-  body .block_3 {
-    width: 30vw;
-    height: 30vw;
-    margin: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 20px;
-  }
-  body .block_4 {
-    height: auto;
-  }
-  body .block_5 {
-    height: 60%;
-  }
-  body .block_6 {
-    align-items: center;
-    height: 15%;
-  }
-  body .block_6 .download-button {
-    visibility: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 0 auto;
-    text-align: center;
-    font-size: 27px;
-    background-color: #4882b8;
-    border-radius: 100px;
-    max-width: 350px;
-    min-width: 310px;
-    min-height: 50%;
-    padding: 16px 60px 12px 60px;
-    cursor: pointer;
-    transition: transform 1.2s ease;
-  }
-  body .block_6 .download-button:hover {
-    transform: scale(1.04);
-  }
-  body .block_7 {
-    height: 10%;
-    display: flex;
-  }
-  body .block_7 .youtube {
-    background: url(/resources/images/yt.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .youtube:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .telegram {
-    background: url(/resources/images/tg.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .telegram:hover {
-    transform: scale(1.1);
-  }
-  body .block_7 .qiwi {
-    background: url(/resources/images/qiwi.webp) 50% 50%/cover;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 1s ease;
-  }
-  body .block_7 .qiwi:hover {
-    transform: scale(1.1);
-  }
-  body .block_8 {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body .block_8 span {
-    text-align: center;
-    margin-left: 5%;
-    margin-top: 6px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  body .icon {
-    background: url(/resources/images/icon.png) 50% 50%/cover;
-    height: 55px;
-    width: 55px;
-    cursor: pointer;
-  }
+.left-grid .programs-grid {
+  display: grid;
+  gap: 20px;
+}
+.left-grid .programs-grid .program-item {
+  cursor: pointer;
+  transition: transform 1s ease;
+  color: #fff;
+  font-family: "gost";
+  font-size: 25px;
+  justify-self: center;
+  align-self: center;
+}
+.left-grid .programs-grid .program-item .arrow {
+  margin-left: 25px;
+  font-size: 20px;
+  color: #eeeeee;
+}
+.left-grid .programs-grid .program-item:hover {
+  transform: translateX(15px);
+}
+.left-grid .programs-grid .program-item.hover {
+  transform: translateX(15px);
+}
+.left-grid .designed {
+  align-self: end;
+}
+.left-grid .designed .designed-text {
+  color: rgba(221, 221, 221, 0.6980392157);
+  font-family: "gost";
+  font-size: 16px;
+}
+.left-grid .designed .designed-text:nth-child(1) {
+  margin: 0px 0px 0px 10px;
+}
+.left-grid .designed .designed-text:nth-child(2) {
+  color: #dddddd;
+  font-weight: bold;
+}
+
+.right-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.right-grid .program-info-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr 4fr 1fr 1fr;
+  margin: 50px 50px 0px 50px;
+  color: #bbb;
+  font-family: gost;
+}
+.right-grid .program-info-grid .tittle {
+  font-size: 32px;
+  font-weight: bold;
+}
+.right-grid .program-info-grid .tittle .nedohackers {
+  color: #eeeeee;
+}
+.right-grid .program-info-grid .discription {
+  font-size: 28px;
+  color: rgba(221, 221, 221, 0.7882352941);
+}
+.right-grid .program-info-grid .discription .my-yt {
+  color: rgb(252, 157, 157);
+  font-weight: bold;
+}
+.right-grid .program-info-grid .discription .my-tg {
+  color: rgb(157, 214, 252);
+  font-weight: bold;
+}
+.right-grid .program-info-grid .discription p {
+  cursor: pointer;
+  font-size: 22px;
+  text-decoration: underline;
+  color: rgba(187, 187, 187, 0.5137254902);
+}
+.right-grid .program-info-grid .download {
+  cursor: pointer;
+  visibility: hidden;
+  background: #4882b8;
+  justify-self: center;
+  align-self: center;
+  padding: 18px 70px;
+  border-radius: 100px;
+  border: 2px solid #69a4db;
+  transition: transform 1.2s ease;
+}
+.right-grid .program-info-grid .download span {
+  font-size: 28px;
+  color: #fff;
+}
+.right-grid .program-info-grid .download:hover {
+  transform: scale(1.04);
+}
+.right-grid .program-info-grid .links {
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  grid-template-rows: 1fr;
+  gap: 15px;
+}
+.right-grid .program-info-grid .links .link {
+  cursor: pointer;
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  justify-self: start;
+  align-self: center;
+  width: 50px;
+  transition: transform 1s ease;
+}
+.right-grid .program-info-grid .links .link:hover {
+  transform: scale(1.1);
+}
+.right-grid .program-image {
+  justify-self: center;
+  align-self: center;
+  visibility: hidden;
+}
+.right-grid .program-image .image {
+  width: 550px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=main.css.map */

@@ -40,14 +40,14 @@ $color-opa-white-09: rgba(255, 255, 255, 0.9);
         .no-find-text {
             font-size: 30px;
         }
-        .no-find-button {
-            font-size: 24px;
+        .no-find-button{
+            background-color: #4882b8;
             margin-top: 20px;
-            background-color: $color-blue;
-            padding: 14px 65px 10px 65px;
+            font-size: 24px;
+            padding: 15px 50px;
             border-radius: 100px;
+            transition: transform 1.2s ease;
             cursor: pointer;
-            transition: transform 1.1s ease;
         }
         .no-find-button:hover {
             transform: scale(1.03);

@@ -1,4 +1,4 @@
-var antivirusArray = ["/resources/files/sav.zip"];
+var antivirusArray = ["/resources/files/sav.zip", "/resources/files/kupets.zip"];
 var csgoArray = ["/resources/files/csgocheats.zip"];
 var epicArray = ["/resources/files/epic.zip"];
 var gtaArray = ["/resources/files/gta6.zip"];
@@ -10,6 +10,7 @@ var fniteArray = ["/resources/files/FniteHacker.rar"];
 var materials = ["/resources/files/additions/WinKeyOFF.zip"];
 
 var av1 = document.getElementById("av1");
+var av2 = document.getElementById("av2");
 var csgo1 = document.getElementById("csgo1");
 var epic1 = document.getElementById("epic1");
 var gta1 = document.getElementById("gta1");
@@ -24,6 +25,10 @@ var winkeyoff = document.getElementById("winkeyoff");
 
 av1.addEventListener("click", function () {
   downloadFile(antivirusArray[0]);
+});
+
+av2.addEventListener("click", function () {
+  downloadFile(antivirusArray[1]);
 });
 
 csgo1.addEventListener("click", function () {

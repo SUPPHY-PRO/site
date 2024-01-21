@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>sHelper | Информация</title>
+    <link rel="stylesheet" href="../resources/css/sHelper.css" />
+  </head>
+  <body>
+    <div class="main-grid">
+        <div class="info-text">
+            <p>Информация по использованию программы sHelper</p>
+        </div>
+        <div class="border left-grid">
+            <p><span class="bold">Левый </span><input type="checkbox"> - отвечает за то, чтобы задача выполнялась перед запуском системы в фоновом процессе. Доступно только если выбран пункт "Включить сервис защиты"</p>
+            <p><span class="bold">Правый </span><input type="checkbox"> - отвечает за то, что будет выполнено после нажатия кнопки "Запустить"</p>
+            <p><span class="bold">Безопасный режим </span>- перезагружает компьютер в безопасный режим</p>
+            <p><span class="bold">Восстановление </span>- перезагружает компьютер, и показывает окно восстановления, как при перезагрузке Windows с зажатым Shift</p>
+            <p><span class="bold">Двойной клик по форме </span>- вкл/выкл все правые <input type="checkbox"></p>
+        </div>
+        <div id="mainForm" class="border centre-grid">
+            <div class="border cell">
+                <input id="1-1" type="checkbox">
+                <input id="2-1" type="checkbox">
+                <span class="funcName noselect">Очистить автозагрузку</span>
+            </div>
+            <div class="border cell">
+                <input id="1-2" type="checkbox">
+                <input id="2-2"type="checkbox">
+                <span class="funcName noselect">Очистить сервисы</span>
+            </div>
+            <div class="border cell">
+                <input id="1-3" type="checkbox">
+                <input id="2-3" type="checkbox">
+                <span class="funcName noselect">Очистить Debugger</span>
+            </div>
+            <div class="border cell">
+                <input id="1-4" type="checkbox">
+                <input id="2-4" type="checkbox">
+                <span class="funcName noselect">Разблокировать диспетчер задач</span>
+            </div>
+            <div class="border cell">
+                <input id="1-5" type="checkbox">
+                <input id="2-5" type="checkbox">
+                <span class="funcName noselect">Разблокировать CTRL+ALT+DEL</span>
+            </div>
+            <div class="border cell">
+                <input id="1-6" type="checkbox">
+                <input id="2-6" type="checkbox">
+                <span class="funcName noselect">Разблокировать реестр</span>
+            </div>
+            <div class="border cell">
+                <input id="1-7" type="checkbox">
+                <input id="2-7" type="checkbox">
+                <span class="funcName noselect">Разблокировать CMD</span>
+            </div>
+            <div class="border cell">
+                <input id="1-8" type="checkbox">
+                <input id="2-8" type="checkbox">
+                <span class="funcName noselect">Разблокировать клавиатуру</span>
+            </div>
+            <div class="border cell">
+                <input id="1-9" type="checkbox">
+                <input id="2-9" type="checkbox">
+                <span class="funcName noselect">Разблокировать мышь</span>
+            </div>
+            <div class="border cell">
+                <input id="1-10" type="checkbox">
+                <input id="2-10" type="checkbox">
+                <span class="funcName noselect">Разблокировать кнопку WIN</span>
+            </div>
+            <div class="border cell">
+                <input id="1-11" type="checkbox">
+                <input id="2-11" type="checkbox">
+                <span class="funcName noselect">Разблокировать диски</span>
+            </div>
+
+            <div class="border cell">
+                <input id="1-12" type="checkbox">
+                <input id="2-12" type="checkbox">
+                <span class="funcName noselect">Восстановить ассоциации</span>
+            </div>
+            <div class="border cell">
+                <input id="1-13" type="checkbox">
+                <input id="2-13" type="checkbox">
+                <span class="funcName noselect">Восстановить кнопки питания</span>
+            </div>
+            <div class="border cell">
+                <input id="1-14" type="checkbox">
+                <input id="2-14" type="checkbox">
+                <span class="funcName noselect">Включить UAC</span>
+            </div>
+            <div class="border cell">
+                <input class="hidden" type="checkbox">
+                <input id="2-15" type="checkbox">
+                <span class="funcName noselect">Включить сервис защиты</span>
+            </div>
+            <div class="separator"></div>
+            <div class="start-button btn noselect">
+                <p>Запустить</p>
+            </div>
+            <div class="merge-grid">
+                <div class="safeboot-button btn noselect">
+                    <p>Безопасный режим</p>
+                </div>
+                <div class="restore-button btn noselect">
+                    <p>Восстановление</p>
+                </div>
+            </div>
+            <div class="info-button btn noselect">
+                <p>Информация о программе</p>
+            </div>
+        </div>
+        <div class="border right-grid"></div>
+        <div
+        onclick="window.location.href = 'https://supphy.ru'"
+        class="no-find-button border noselect"
+      >
+        Перейти на главную
+      </div>
+    </div>
+    <script src="/resources/scripts/sHelper.js"></script>
+  </body>
+</html>

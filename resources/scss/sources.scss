@@ -1,23 +1,11 @@
 @import "nullable.scss";
-$color-blue: #4882b8;
-$color-blue-hover: #447cb0;
-$color-opa-white-01: rgba(255, 255, 255, 0.1);
-$color-opa-white-02: rgba(255, 255, 255, 0.2);
-$color-opa-white-03: rgba(255, 255, 255, 0.3);
-$color-opa-white-04: rgba(255, 255, 255, 0.4);
-$color-opa-white-05: rgba(255, 255, 255, 0.5);
-$color-opa-white-06: rgba(255, 255, 255, 0.6);
-$color-opa-white-07: rgba(255, 255, 255, 0.7);
-$color-opa-white-08: rgba(255, 255, 255, 0.8);
-$color-opa-white-09: rgba(255, 255, 255, 0.9);
 
-$color-border: rgba(255, 255, 255, 0.4);
-$color-header: rgba(255, 255, 255, 0.8);
-$color-text: rgba(255, 255, 255, 0.5);
-
-@font-face {
-    font-family: "gost";
-    src: url("../fonts/gost.ttf") format("truetype");
+body{
+    background: #303030;
+    overflow: hidden;
+}
+.hidden{
+    visibility: hidden;
 }
 .noselect {
     -webkit-touch-callout: none;
@@ -28,426 +16,89 @@ $color-text: rgba(255, 255, 255, 0.5);
     user-select: none;
 }
 
-@media screen and (max-width: 2500px) {
-    .block {
-        color: $color-header;
-        font-size: 24px;
-        padding: 15px;
-        text-align: center;
-    }
-    body {
-        background: #303030;
-        font-family: "gost", Arial, sans-serif;
-        overflow: hidden;
-        .block_2 {
-            display: flex;
-            flex-direction: column;
-            margin-top: 2%;
-            .toMain {
-                color: $color-header;
-                background-color: $color-blue;
-                font-size: 24px;
-                padding: 10px;
-                border-radius: 100px;
-                width: 25%;
-                min-width: 250px;
-                margin: 0 auto;
-            }
-        }
-    }
-    .block_1 {
-        border: 0.1px solid $color-border; // рамка для всех элементов
-        border-radius: 20px;
-        display: flex;
-        margin: 5% auto 0;
-        max-width: 70%;
-        height: 75%;
-        flex-direction: row;
-        align-items: start;
-        justify-content: center;
-        .left-block {
-            border-right: 0.1px solid $color-border;
-            min-width: 33.3%;
-            height: 100%;
-            .program {
-                font-size: 20px;
-                text-align: left;
-                margin-left: 5%;
-                margin-top: 15%;
-                .version {
-                    user-select: none;
-                }
-                .version:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
-        .middle-block {
-            border-right: 0.1px solid $color-border;
-            min-width: 33.3%;
-            height: 100%;
-            .material {
-                color: $color-text;
-                font-size: 20px;
-                text-align: left;
-                margin-left: 5%;
-                margin-top: 15%;
-                span {
-                    color: $color-opa-white-07;
-                    user-select: none;
-                }
-                span:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
-        .right-block {
-            display: flex;
-            flex-direction: column;
-            min-width: 33.3%;
-            height: 100%;
-            .code-text {
-                color: $color-text;
-                margin: auto 0;
-                a {
-                    color: $color-opa-white-07;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-                a:visited {
-                    color: $color-opa-white-07;
-                }
-                span {
-                    color: $color-opa-white-07;
-                }
-                span:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+.border{
+    //border: 0.1px solid red; // рамка 
 }
 
-@media screen and (max-width: 1145px) {
-    .block {
-        color: $color-header;
-        font-size: 18px;
-        padding: 15px;
-        text-align: center;
-    }
-    body {
-        background: #303030;
-        font-family: "gost", Arial, sans-serif;
-        overflow: hidden;
-        .block_2 {
-            display: flex;
-            flex-direction: column;
-            margin-top: 2%;
-            .toMain {
-                color: $color-header;
-                background-color: $color-blue;
-                font-size: 18px;
-                padding: 10px;
-                border-radius: 100px;
-                width: 25%;
-                min-width: 150px;
-                margin: 0 auto;
-            }
-        }
-    }
-    .block_1 {
-        border: 0.1px solid $color-border; // рамка для всех элементов
-        border-radius: 20px;
-        display: flex;
-        margin: 5% auto 0;
-        max-width: 70%;
-        height: 75%;
-        flex-direction: row;
-        align-items: start;
-        justify-content: center;
-        .left-block {
-            border-right: 0.1px solid $color-border;
-            min-width: 33.3%;
-            height: 100%;
-            .program {
-                font-size: 16px;
-                text-align: left;
-                margin-left: 5%;
-                margin-top: 15%;
-                .version {
-                    user-select: none;
-                }
-                .version:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
-        .middle-block {
-            border-right: 0.1px solid $color-border;
-            min-width: 33.3%;
-            height: 100%;
-            .material {
-                color: $color-text;
-                font-size: 16px;
-                text-align: left;
-                margin-left: 5%;
-                margin-top: 15%;
-                span {
-                    color: $color-opa-white-07;
-                    user-select: none;
-                }
-                span:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
-        .right-block {
-            display: flex;
-            flex-direction: column;
-            min-width: 33.3%;
-            height: 100%;
-            .code-text {
-                color: $color-text;
-                margin: auto 0;
-                font-size: 18px;
-                a {
-                    color: $color-opa-white-07;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-                a:visited {
-                    color: $color-opa-white-07;
-                }
-                span {
-                    color: $color-opa-white-07;
-                }
-                span:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+@font-face {
+    font-family: "gost";
+    src: url("../fonts/gost.ttf") format("truetype");
 }
 
-@media screen and (max-width: 890px) {
-    .block {
-        color: $color-header;
-        font-size: 15px;
-        padding: 15px;
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 50px 0px;
+    row-gap: 20px;
+    //height: 100%;
+    color: #ddddddb2;
+    font-family: "gost";
+    font-size: 20px;
+    border: 0.1px solid gray;
+    border-radius: 50px;
+    margin: 120px;
+    .tittle{
         text-align: center;
+        height: 30px;
+        margin-top: 15px;
+        border-bottom: 0.1px solid gray;
+        font-weight: bold;
     }
-    body {
-        background: #303030;
-        font-family: "gost", Arial, sans-serif;
-        overflow: hidden;
-        .block_2 {
-            display: flex;
-            flex-direction: column;
-            margin-top: 2%;
-            .toMain {
-                color: $color-header;
-                background-color: $color-blue;
-                font-size: 15px;
-                padding: 7px;
-                border-radius: 100px;
-                width: 25%;
-                min-width: 150px;
-                margin: 0 auto;
-            }
+    .left-grid{
+        display: grid;
+        gap: 40px;
+        border-right: 0.1px solid gray;
+        //border-bottom: 0.1px solid gray;
+        .program{
+            margin: 0px 10px;
+        }
+        .version{
+            font-size: 18px;
+            cursor: pointer;
+            color: #ffffffe1;
         }
     }
-    .block_1 {
-        border: 0.1px solid $color-border; // рамка для всех элементов
-        border-radius: 20px;
-        display: flex;
-        margin: 5% auto 0;
-        max-width: 70%;
-        height: 75%;
-        flex-direction: row;
-        align-items: start;
-        justify-content: center;
-        .left-block {
-            border-right: 0.1px solid $color-border;
-            min-width: 33.3%;
-            height: 100%;
-            .program {
-                font-size: 12px;
-                text-align: left;
-                margin-left: 5%;
-                margin-top: 15%;
-                .version {
-                    user-select: none;
-                }
-                .version:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
-        .middle-block {
-            border-right: 0.1px solid $color-border;
-            min-width: 33.3%;
-            height: 100%;
-            .material {
-                color: $color-text;
-                font-size: 12px;
-                text-align: left;
-                margin-left: 5%;
-                margin-top: 15%;
-                span {
-                    color: $color-opa-white-07;
-                    user-select: none;
-                }
-                span:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
-        .right-block {
-            display: flex;
-            flex-direction: column;
-            min-width: 33.3%;
-            height: 100%;
-            .code-text {
-                color: $color-text;
-                margin: auto 0;
-                font-size: 12px;
-                a {
-                    color: $color-opa-white-07;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-                a:visited {
-                    color: $color-opa-white-07;
-                }
-                span {
-                    color: $color-opa-white-07;
-                }
-                span:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
+    .middle-grid{
+        display: grid;
+        border-right: 0.1px solid gray;
+        .material{
+            margin: 0px 10px;
+            text-align: center;
+            .winkeyoff{
+            cursor: pointer;
+            color: #ffffffe1;
             }
         }
     }
-}
-
-@media screen and (max-width: 650px) {
-    .block {
-        color: $color-header;
-        font-size: 14px;
-        padding: 15px;
-        text-align: center;
-    }
-    body {
-        background: #303030;
-        font-family: "gost", Arial, sans-serif;
-        overflow: hidden;
-        .block_2 {
-            display: flex;
-            flex-direction: column;
-            margin-top: 2%;
-            .toMain {
-                color: $color-header;
-                background-color: $color-blue;
-                font-size: 18px;
-                padding: 10px;
-                border-radius: 100px;
-                width: 25%;
-                min-width: 150px;
-                margin: 0 auto;
+    .right-grid{
+        display: grid;
+        .code{
+            margin: 0px 10px;
+            text-align: center;
+            a{
+                color: rgba(255, 255, 255, 0.7);
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            a:visited {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            span {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            span:hover {
+                text-decoration: underline;
+                cursor: pointer;
             }
         }
     }
-    .block_1 {
-        border: 0.1px solid $color-border; // рамка для всех элементов
-        border-radius: 20px;
-        display: flex;
-        margin: 5% auto 0;
-        max-width: 60%;
-        height: 80%;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        .left-block {
-            border-right: none;
-            min-width: 100%;
-            height: 100%;
-            border-bottom: 0.1px solid $color-border;
-            .program {
-                color: $color-text;
-                font-size: 14px;
-                text-align: left;
-                margin-left: 5%;
-                margin-top: 6%;
-                .version {
-                    color: $color-opa-white-07;
-                    user-select: none;
-                }
-                .version:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
-        .middle-block {
-            border-right: none;
-            min-width: 100%;
-            height: 100%;
-            .material {
-                color: $color-text;
-                font-size: 14px;
-                text-align: left;
-                margin-left: 5%;
-                margin-top: 5%;
-                
-                span {
-                    color: $color-opa-white-07;
-                    user-select: none;
-                }
-                span:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-            border-bottom: 0.1px solid $color-border;
-        }
-        .right-block {
-            display: flex;
-            flex-direction: column;
-            min-width: 100%;
-            height: 100%;
-            .code-text {
-                color: $color-text;
-                margin: auto 0;
-                font-size: 14px;
-                a {
-                    color: $color-opa-white-07;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-                a:visited {
-                    color: $color-opa-white-07;
-                }
-                span {
-                    color: $color-opa-white-07;
-                }
-                span:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-        }
+    .toMain{
+        height: 50px;
+        grid-column: 2;
+        border-radius: 100px;
+        font-size: 20px;
+        background-color: #4882b8;
+        color: white;
     }
 }
