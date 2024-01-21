@@ -41,21 +41,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 wannaSiteButton.addEventListener("click", function () {
   window.open(
-    "https://t.me/SUPPHY_PRO/36",
-    "_blank"
+    "https://t.me/SUPPHY_PRO/36", "_blank"
   );
 });
 
 brandImage.addEventListener("click", function () {
-  window.open(
-    "https://supphy.ru"
-  );
+    window.location.href = "https://supphy.ru";
 });
 
 ytImage.addEventListener("click", function () {
   window.open(
-    "https://www.youtube.com/channel/UCmPjTsx2AqQQVftOwofk0Kw",
-    "_blank"
+    "https://www.youtube.com/channel/UCmPjTsx2AqQQVftOwofk0Kw", "_blank"
   );
 });
 
