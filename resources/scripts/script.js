@@ -19,7 +19,6 @@ var tittleText = document.getElementById("tittle");
 var discriptionText = document.getElementById("discription");
 var ytImage = document.getElementById("yt");
 var tgImage = document.getElementById("tg");
-var qiwiImage = document.getElementById("qiwi");
 var tinkoffImage = document.getElementById("tinkoff");
 var imagesArray = [
   "/resources/images/win12.webp",
@@ -57,10 +56,6 @@ ytImage.addEventListener("click", function () {
 
 tgImage.addEventListener("click", function () {
   window.open("https://t.me/SUPPHY_PRO", "_blank");
-});
-
-qiwiImage.addEventListener("click", function () {
-  window.open("https://qiwi.com/n/SUPPHY", "_blank");
 });
 
 tinkoffImage.addEventListener("click", function () {
